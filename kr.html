@@ -1,25 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>육도경 - 소프트웨어 엔지니어</title>
 
-  <!--
-    - favicon
-  -->
   <link rel="shortcut icon" href="./main/assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
   <link rel="stylesheet" href="./main/assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -27,32 +16,24 @@
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
-
   <main>
 
-    <!--
-      - #SIDEBAR
-    -->
+    <!-- 사이드바 -->
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./main/assets/images/Peter.jpg" alt="Peter Yuk" width="80">
+          <img src="./main/assets/images/Peter.jpg" alt="육도경 사진" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Peter Yuk">육도경</h1>
-
-          <p class="title">소프트웨어 엔지니어</p>
+          <h1 class="name" title="육도경">육도경</h1>
+          <p class="title">소프트웨어 엔지니어 | 퍼듀대 컴퓨터과학 '26</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
-          <span>연락처 보기</span>
-
+          <span>연락처 펼치기</span>
           <ion-icon name="chevron-down"></ion-icon>
         </button>
 
@@ -65,60 +46,43 @@
         <ul class="contacts-list">
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">이메일</p>
-
               <a href="mailto:peteryuk91@gmail.com" class="contact-link">peteryuk91@gmail.com</a>
             </div>
-
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
-              <p class="contact-title">전화번호</p>
-
-              <a href="tel:+8201054500649" class="contact-link">010-5450-0649</a>
+              <p class="contact-title">전화</p>
+              <a href="tel:+17657642870" class="contact-link">+1 (765) 764-2870</a>
             </div>
-
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="calendar-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">생년월일</p>
-
-              <time datetime="2001-09-19">2001-09-19</time>
+              <time datetime="2001-09-19">2001년 9월 19일</time>
             </div>
-
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
-              <p class="contact-title">주소</p>
-
-              <address>서울시 강남구 역삼2동</address>
-
+              <p class="contact-title">거주지</p>
+              <address>미국 인디애나주 웨스트 라피엣</address>
             </div>
-
           </li>
 
         </ul>
@@ -140,7 +104,7 @@
           </li>
 
           <li class="social-item">
-            <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/dokyung-yuk-a3aba3254/" class="social-link">
+            <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/peter-yuk-a3aba3254/" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
@@ -151,148 +115,102 @@
 
     </aside>
 
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
+    <!-- 메인 컨텐츠 -->
     <div class="main-content">
 
-      <!--
-        - #NAVBAR
-      -->
-
+      <!-- 내비게이션 -->
       <nav class="navbar">
-
         <ul class="navbar-list">
-
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link active" data-nav-link>소개</button>
           </li>
-
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link>이력서</button>
           </li>
-          
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Coursework</button>
+            <button class="navbar-link" data-nav-link>프로젝트</button>
           </li>
-
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link>연락처</button>
           </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Project</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
         </ul>
-
       </nav>
 
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
+      <!-- 소개 -->
+      <article class="about active" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title">소개</h2>
         </header>
 
         <section class="about-text">
           <p>
-            I'm a Junior at Purdue University majoring in Computer Science, where I have the opportunity to 
-            explore into various aspects of technology that interests me. Alongside my academic pursuits, 
-            I have a strong passion for fitness and video graphics where I can express creativity and care for my health.  
-            My journey began in Seoul, South Korea, a city known for its technological advancements. 
-            I was constantly surrounded by cutting-edge innovations which fostered my fascination with 
-            computers and their endless possibilities, ultimately guiding me toward a career in computer science.
+            퍼듀대학교 컴퓨터과학 전공 4학년으로 2026년 5월 졸업 예정입니다. 
+            백엔드 개발과 실제 문제를 해결하는 확장 가능한 시스템 구축에 집중하고 있습니다. 
+            현재 전직 3M 시니어 엔지니어와 함께 제조실행시스템(MES)을 설계·구현 중이며, 
+            C#, ASP.NET Core, SQL Server, AWS를 사용해 생산 공정, 재고 추적, 주문 관리를 담당합니다.
           </p>
           <p>
-            My academic interests are particularly focused on software engineering, computer graphics, machine learning, and web development.
-            These fields are attractive because software engineering allows me to create applications that can grow and handle increasing amounts of work or users, while computer
-            graphics aids in conveying complex ideas and information effectively. Machine learning enhances decision-making through predictive analytics,
-            and web development makes information and services available to a global audience. 
+            코딩을 넘어 시스템 아키텍처와 기술 리더십에 관심이 많습니다. 
+            FAANG 대비를 돕는 알고리즘 스터디 "CodePrep"을 창립하여 15명 이상을 지도했고, 
+            OZ Lab 부회장으로서 20명+ 학생에게 풀스택 개발을 교육하고 있습니다. 
+            목표는 백엔드 엔지니어로 성장한 뒤, 기술적 깊이와 커뮤니케이션을 결합하는 솔루션즈 아키텍트 혹은 테크니컬 PM으로 확장하는 것입니다.
           </p>
-   
         </section>
-
-
-        <!--
-          - service
-        -->
 
         <section class="service">
 
-          <h3 class="h3 service-title">관심분야</h3>
+          <h3 class="h3 service-title">무엇을 하고 있나요</h3>
 
           <ul class="service-list">
 
             <li class="service-item">
               <div class="service-icon-box">
-                <img src="./main/assets/images/icon-software-engineer.svg" alt="Software Engineer icon" width="45">
+                <img src="./main/assets/images/icon-software-engineer.svg" alt="백엔드 아이콘" width="45">
               </div>
-
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">소프트웨어 엔지니어링</h4>
-
+                <h4 class="h4 service-item-title">백엔드 개발</h4>
                 <p class="service-item-text">
-                  사용자의 요구에 맞춘 소프트웨어 애플리케이션을 개발하며 원활한 성능을 보장하기 위해 직접 코딩, 디버깅 및 성능 최적화를 수행
+                  C#, ASP.NET Core, SQL Server 기반 확장 가능한 백엔드 시스템 개발. 
+                  현재 MES의 생산 워크플로우와 재고 추적 기능을 설계·구현 중.
                 </p>
               </div>
             </li>
 
             <li class="service-item">
               <div class="service-icon-box">
-                <img src="./main/assets/images/brush.svg" alt="Computer Graphcs icon" width="40">
+                <img src="./main/assets/images/icon-ML.svg" alt="시스템 아키텍처 아이콘" width="40">
               </div>
-
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">컴퓨터 그래픽스</h4>
-
+                <h4 class="h4 service-item-title">시스템 아키텍처</h4>
                 <p class="service-item-text">
-                  시각적으로 매력적인 3D 모델과 애니메이션 개발을 통해 애플리케이션과 가상 환경에서 사용자 경험 향상
+                  확장성, 성능, 신뢰성을 중시한 분산 시스템과 API 설계. 
+                  이벤트 기반 아키텍처, WebSocket 서버, 클라우드 인프라 경험.
                 </p>
               </div>
             </li>
 
             <li class="service-item">
               <div class="service-icon-box">
-                <img src="./main/assets/images/icon-ML.svg" alt="Machine Learning icon" width="40">
+                <img src="./main/assets/images/web-dev.svg" alt="클라우드 인프라 아이콘" width="40">
               </div>
-
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">머신러닝</h4>
-
+                <h4 class="h4 service-item-title">클라우드 인프라</h4>
                 <p class="service-item-text">
-                  데이터로부터 학습하는 지능형 시스템 개발하며 알고리즘을 통해 예측 분석 및 의사 결정 과정 향상
+                  AWS EC2, RDS, Lambda, SQS로 애플리케이션 배포 및 운영. 
+                  서버리스 아키텍처 설계와 클라우드 비용 최적화 수행.
                 </p>
               </div>
             </li>
 
             <li class="service-item">
               <div class="service-icon-box">
-                <img src="./main/assets/images/web-dev.svg" alt="Web Development icon" width="40">
+                <img src="./main/assets/images/brush.svg" alt="기술 리더십 아이콘" width="40">
               </div>
-
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">웹 개발</h4>
-
+                <h4 class="h4 service-item-title">기술 리더십</h4>
                 <p class="service-item-text">
-                  직관적인 사용자 인터페이스와 효율적인 서버 사이드 로직에 중점을 두어 동적 웹사이트 및 웹 
-                  애플리케이션을 설계하고 개발하여 반응형이고 몰입감 있는 온라인 경험을 제공
+                  CodePrep 창립 및 OZ Lab 부회장으로 35명+ 학습자 대상 기술 역량 향상과 면접 대비 주도.
                 </p>
               </div>
             </li>
@@ -301,28 +219,20 @@
 
         </section>
 
-
-        <!--
-          - testimonials modal
-        -->
-
         <div class="modal-container" data-modal-container>
           <div class="overlay" data-overlay></div>
           <section class="testimonials-modal">
-            <button class="modal-close-btn" data-modal-close-btn>
-            </button>
+            <button class="modal-close-btn" data-modal-close-btn></button>
           </section>
         </div>
+
       </article>
 
-      <!--
-        - #RESUME
-      -->
-
+      <!-- 이력서 -->
       <article class="resume" data-page="resume">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title">이력서</h2>
         </header>
 
         <section class="timeline">
@@ -331,33 +241,14 @@
             <div class="icon-box">
               <ion-icon name="school-outline"></ion-icon>
             </div>
-
-            <h3 class="h3">Education</h3>
+            <h3 class="h3">학력</h3>
           </div>
 
           <ol class="timeline-list">
-
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Purdue University</h4>
-
-              <span>2022.08 — 2026.06 (expected)</span>
-
-              <p class="timeline-text">
-                  Bachelor of Science in Computer Science
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Kimball Union Academy</h4>
-
-              <span>2016.09 — 2020.06</span>
-
-              <p class="timeline-text">
-              </p>
-
+              <h4 class="h4 timeline-item-title">퍼듀대학교</h4>
+              <span>2022.08 — 2026.05 (예정)</span>
+              <p class="timeline-text">컴퓨터과학 학사 (소프트웨어 공학 트랙)</p>
             </li>
           </ol>
 
@@ -369,55 +260,30 @@
             <div class="icon-box">
               <ion-icon name="business-outline"></ion-icon>
             </div>
-
-            <h3 class="h3">Internship</h3>
+            <h3 class="h3">인턴십</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">CSI Vision</h4>
+              <span>2025.05 — 2025.07</span>
+              <p class="timeline-text">
+                Python WebSocket 서버와 이벤트 기반 아키텍처로 실시간 비디오 처리 백엔드 설계. 
+                60fps 스트림을 50ms 이하 지연으로 처리. Unity 클라이언트를 위한 REST API와 커스텀 WebSocket 프로토콜 설계, 
+                상태 동기화 및 기하학 보정 파이프라인 구현.
+              </p>
+            </li>
 
-              <h4 class="h4 timeline-item-title">Naver Cloud</h4>
-
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">네이버 클라우드</h4>
               <span>2023.06 — 2023.08</span>
-
               <p class="timeline-text">
-                Responsible for English localization and development of online instructions for the Naver Works application. 
-                Applied short codes in the Naver Cloud department using WordPress and collaborated with cross-functional 
-                teams to enhance user experience and interface for international users. Responsible for English localization and development 
-                of online instructions for the Naver Works application. Applied short codes in the Naver Cloud department using WordPress and 
-                collaborated with cross-functional teams to enhance user experience and interface for international users.
+                Naver Works 다국어 로컬라이제이션 기능 개발. Java와 WordPress 기반 워크플로 자동화로 
+                10만+ 이용자 접근성 향상. 번역 파이프라인 최적화로 처리 시간 30% 단축.
               </p>
-
             </li>
 
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">HACCP Korea</h4>
-
-              <span>2022.06 — 2022.08</span>
-
-              <p class="timeline-text">
-                Set up the infrastructure for the 2022 Human Resources Exchange Program in South Korea, 
-                working closely with officials from Vietnam and Indonesia in the Ministry of Food and Drug Safety Department. 
-                Provided interpretation services to facilitate effective communication and collaboration.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">ETH Tech</h4>
-
-              <span>2020.07 — 2020.12</span>
-
-              <p class="timeline-text">
-                At ETH Tech, responsibilities included focusing on hardware setup and management using Linux Ubuntu. 
-                Gained hands-on experience in server management and hardware troubleshooting, and installed cryptocurrency miners 
-                for various companies. This role significantly enhanced technical skill sets in cybersecurity and hardware management.
-              </p>
-
-            </li>
           </ol>
 
         </section>
@@ -426,445 +292,155 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="shield-outline"></ion-icon>
+              <ion-icon name="people-outline"></ion-icon>
             </div>
-
-            <h3 class="h3">Service</h3>
+            <h3 class="h3">리더십</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Republic Of Korea Army</h4>
-
-              <span>2020.12 — 2022.06</span>
-
+              <h4 class="h4 timeline-item-title">Purdue CodePrep — 창립자/퍼실리테이터</h4>
+              <span>2025.01 — 현재</span>
               <p class="timeline-text">
-                  Achieved the title of "Top Soldier" starting from Private First Class and received a 
-                  commendation award for outstanding performance. Deployed as an interpreter at Incheon International Airport 
-                  during the COVID-19 pandemic, facilitating communication and coordination between military and civilian personnel. 
-                  Supervised and trained a team of soldiers, ensuring operational readiness and discipline, 
-                  and managed and maintained equipment, ensuring all assets were in optimal condition.
+                FAANG 기술 면접 대비 알고리즘 클럽 운영. 자료구조·알고리즘 커리큘럼 설계로 
+                문제 해결 속도 평균 30% 향상.
               </p>
-
             </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">OZ Lab — 부회장/팀 캡틴</h4>
+              <span>2025.01 — 현재</span>
+              <p class="timeline-text">
+                LikeLion 프로그램 산하 스타트업 동아리 리드. 20명+ 대상 React, Django, Python 중심 풀스택 교육. 
+                출석률 99% 유지.
+              </p>
+            </li>
+
           </ol>
+
         </section>
 
         <section class="skill">
 
-          <h3 class="h3 skills-title">My skills</h3>
+          <h3 class="h3 skills-title">기술 스택</h3>
 
           <ul class="skills-list content-card">
 
-            <li class="skills-item">
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">C#</h5></div></li>
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Python</h5></div></li>
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Java</h5></div></li>
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">JavaScript</h5></div></li>
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">SQL</h5></div></li>
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">ASP.NET Core</h5></div></li>
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">React</h5></div></li>
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">AWS</h5></div></li>
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">SQL Server</h5></div></li>
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Docker</h5></div></li>
 
-              <div class="title-wrapper">
-                <h5 class="h5">Python</h5>
-              </div>
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Java</h5>
-              </div>
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">C</h5>
-              </div>
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">R</h5>
-              </div>
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">C++</h5>
-              </div>
-            </li> 
-
-        </section>
-
-      </article>
-
-      <!--
-        - #CourseWork
-      -->
-
-      <article class="coursework" data-page="coursework">
-
-        <header>
-          <h2 class="h2 article-title">Coursework</h2>
-        </header>
-        <section class="about-text">
-          <p>
-            수업 제목 클릭 시 상세 설명 제공
-          </p>
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">수강 완료한 CS 수업</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <a target="_blank" rel="noopener" href="https://selfservice.mypurdue.purdue.edu/prod/bzwsrch.p_catalog_detail?term=202420&subject=CS&cnbr=39000&enhanced=Y">
-                <h4 class="h4 timeline-item-title">CS390</h4>
-              </a>
-              <span>2024 봄 학기</span>
-
-              <p class="timeline-text">
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <a target="_blank" rel="noopener" href="https://www.cs.purdue.edu/academic-programs/courses/canonical/cs251.html">
-                <h4 class="h4 timeline-item-title">CS251</h4>
-              </a>
-              <span>2024 봄 학기</span>
-              <p class="timeline-text">
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <a target="_blank" rel="noopener" href="https://www.cs.purdue.edu/academic-programs/courses/canonical/cs250.html">
-                <h4 class="h4 timeline-item-title">CS250</h4>
-              </a>
-              <span>2024 봄 학기</span>
-              <p class="timeline-text">
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <a target="_blank" rel="noopener" href="https://www.cs.purdue.edu/academic-programs/courses/canonical/cs240.html">
-                <h4 class="h4 timeline-item-title">CS240</h4>
-              </a>
-              <span>2023 가을 학기</span>
-              <p class="timeline-text">
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <a target="_blank" rel="noopener" href="https://www.cs.purdue.edu/academic-programs/courses/canonical/cs182.html">
-                <h4 class="h4 timeline-item-title">CS182</h4>
-              </a>
-              <span>2023 봄 학기</span>
-              <p class="timeline-text">
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <a target="_blank" rel="noopener" href="https://www.cs.purdue.edu/academic-programs/courses/canonical/cs180.html">
-                <h4 class="h4 timeline-item-title">CS180</h4>
-              </a>
-              <span>2022 가을 학기</span>
-              <p class="timeline-text">
-              </p>
-            </li>
-          </ol>
-        </section>
-      </article>
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>연습문제</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>개념</button>
-            </li>
           </ul>
 
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>카테고리 선택</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>연습문제</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>개념</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="all">
-              <a target="_blank" rel="noopener" href="https://dyuk01.github.io/blog/about/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./main/assets/images/blog-image.png" alt="todo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">홈페이지</h3>
-
-                <p class="project-category"></p>
-
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="연습문제">
-              <a target="_blank" rel="noopener" href="https://dyuk01.github.io/blog/category/#leetcode">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./main/assets/images/icon-leetcode.png" alt="leetcode" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">LeetCode</h3>
-
-                <p class="project-category">연습문제</p>
-
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="연습문제">
-              <a target="_blank" rel="noopener" href="https://dyuk01.github.io/blog/category/#programmers">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./main/assets/images/icon-programmers.png" alt="programmers" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Programmers</h3>
-
-                <p class="project-category">연습문제</p>
-
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="개념">
-              <a target="_blank" rel="noopener" href="https://dyuk01.github.io/blog/category/#algorithm">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./main/assets/images/icon-algo.png" alt="algorithm" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">알고리즘</h3>
-
-                <p class="project-category">개념</p>
-
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="개념">
-              <a target="_blank" rel="noopener" href="https://dyuk01.github.io/blog/category/#manual">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./main/assets/images/icon-installation.png" alt="todo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">매뉴얼</h3>
-
-                <p class="project-category">개념</p>
-
-              </a>
-            </li>
-          </ul>
         </section>
 
       </article>
 
-      <!--
-        - #Project
-      -->
-
+      <!-- 프로젝트 -->
       <article class="project" data-page="project">
 
         <header>
-          <h2 class="h2 article-title">Project</h2>
+          <h2 class="h2 article-title">프로젝트</h2>
         </header>
 
         <section class="projects">
 
           <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>팀 프로젝트</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>개인 프로젝트</button>
-            </li>
+            <li class="filter-item"><button class="active" data-filter-btn>전체</button></li>
+            <li class="filter-item"><button data-filter-btn>팀 프로젝트</button></li>
+            <li class="filter-item"><button data-filter-btn>개인 프로젝트</button></li>
           </ul>
 
           <div class="filter-select-box">
-
             <button class="filter-select" data-select>
-
               <div class="select-value" data-selecct-value>카테고리 선택</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
+              <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
             </button>
 
             <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>팀 프로젝트</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>개인 프로젝트</button>
-              </li>
-
+              <li class="select-item"><button data-select-item>전체</button></li>
+              <li class="select-item"><button data-select-item>팀 프로젝트</button></li>
+              <li class="select-item"><button data-select-item>개인 프로젝트</button></li>
             </ul>
-
           </div>
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="개인 프로젝트">
-              <a target="_blank" rel="noopener" href="https://github.com/dyuk01/main">
-
+            <li class="project-item active" data-filter-item data-category="team project">
+              <a target="_blank" rel="noopener" href="https://github.com/jinwoo2-inkcode/MES">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./main/assets/images/portfolio-image.png" alt="MES" loading="lazy">
+                </figure>
+                <h3 class="project-title">제조실행시스템(MES)</h3>
+                <p class="project-category">팀 프로젝트</p>
+              </a>
+            </li>
 
+            <li class="project-item active" data-filter-item data-category="team project">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./main/assets/images/blog-image.png" alt="Boilermake" loading="lazy">
+                </figure>
+                <h3 class="project-title">산업 안전 시스템 (Boilermake XII - 3위)</h3>
+                <p class="project-category">팀 프로젝트</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="personal project">
+              <a target="_blank" rel="noopener" href="https://github.com/dyuk01/main">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
                   <img src="./main/assets/images/portfolio-image.png" alt="포트폴리오" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">포트폴리오</h3>
-
+                <h3 class="project-title">포트폴리오 웹사이트</h3>
                 <p class="project-category">개인 프로젝트</p>
-
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="개인 프로젝트">
-              <a target="_blank" rel="noopener" href="https://github.com/dyuk01/blog">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./main/assets/images/blog-image.png" alt="blog" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">블로그</h3>
-
-                <p class="project-category">개인 프로젝트</p>
-
-              </a>
-            </li>
           </ul>
         </section>
 
       </article>
 
-      <!--
-        - #CONTACT
-      -->
-
+      <!-- 연락처 -->
       <article class="contact" data-page="contact">
 
         <header>
-          <h2 class="h2 article-title">Contact</h2>
+          <h2 class="h2 article-title">연락처</h2>
         </header>
 
         <section class="mapbox" data-mapbox>
           <figure>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.4309468480787!2d127.04190988470968!3d37.49775290000624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca403b5711df7%3A0x51c748cbe7b7c44e!2s332%20Eonju-ro%2C%20Gangnam%20District%2C%20Seoul!5e0!3m2!1sen!2skr!4v1718614027593!5m2!1sen!2skr"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.3244179667986!2d-86.9075997874196!3d40.42381475508734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8812e2a908ee24dd%3A0xcd049b87810258e3!2s46%20N%20Salisbury%20St%2C%20West%20Lafayette%2C%20IN%2047906!5e0!3m2!1sen!2sus!4v1710198227879!5m2!1sen!2sus"
+              width="400" height="300" loading="lazy"></iframe>
           </figure>
         </section>
 
         <section class="contact-form">
 
-          <h3 class="h3 form-title">연락 양식</h3>
+          <h3 class="h3 form-title">문의하기</h3>
 
           <form action="https://formsubmit.co/peteryuk91@gmail.com" method="POST" class="form" data-form>
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="성함" required data-form-input>
-              <input type="email" name="email" class="form-input" placeholder="이메일 주소" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="이메일" required data-form-input>
               <input type="hidden" name="_captcha" value="false">
               <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
               <input type="text" name="_honey" style="display:none">
-              <input type="hidden" name="_autoresponse" value="연락 감사합니다! 빠른 시간 내에 연락드리겠습니다.">
+              <input type="hidden" name="_autoresponse" value="문의 주셔서 감사합니다. 빠르게 회신드리겠습니다.">
               <input type="hidden" name="_template" value="table">
-              <form action="https://formsubmit.co/asdsadsadwasd" method="POST" />
               <input type="hidden" name="_next" value="https://dyuk01.github.io/main/thanks.html">
             </div>
 
@@ -882,24 +458,13 @@
       </article>
 
     </div>
-    </article>
+
   </main>
 
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
   <script src="./main/assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
