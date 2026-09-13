@@ -1,61 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="shortcut icon" href="./main/assets/images/logo.ico" type="image/x-icon">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background-color: hsl(0, 0%, 7%);
-            color: white; /* Set text color to white */
-        }
-        .language-container {
-            text-align: center;
-            background: hsl(240, 2%, 12%);
-            padding: 20px;
-            border-radius: 10px;
-            /*box-shadow: 0 2px 10px hsl(0, 0%, 19%);*/
-            outline: 1px solid hsl(240, 1%, 25%); /* Set outline color to white */
-        }
-        .language-button {
-            margin: 10px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            background-color: hsl(240, 1%, 18%);
-            color: white; /* Set button text color to white */
-            transition: background-color 0.3s;
-            outline: 1px solid hsl(240, 1%, 25%); /* Set outline color to white */
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Peter Yuk, software engineer in Austin. Explore selected projects, professional experience, and résumé.">
+  <meta name="theme-color" content="#f8f8f3">
+  <title>Peter Yuk — Software Engineer</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
 
-        }
-        .language-button:hover {
-            background-color: hsl(240, 1%, 30%);
-        }
-    </style>
+  <link rel="canonical" href="https://dyuk01.github.io/main/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Peter Yuk">
+  <meta property="og:title" content="Peter Yuk — Software Engineer">
+  <meta property="og:description" content="Peter Yuk, software engineer in Austin. Explore selected projects, professional experience, and résumé.">
+  <meta property="og:url" content="https://dyuk01.github.io/main/">
+  <meta property="og:image" content="https://dyuk01.github.io/main/media/social-card.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Peter Yuk — Software Engineer, Austin, Texas. Selected work: Value Indiana, CityLink, and JobHawk.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Peter Yuk — Software Engineer">
+  <meta name="twitter:description" content="Peter Yuk, software engineer in Austin. Explore selected projects, professional experience, and résumé.">
+  <meta name="twitter:image" content="https://dyuk01.github.io/main/media/social-card.jpg">
+  <meta name="twitter:image:alt" content="Peter Yuk — Software Engineer in Austin, Texas">
 </head>
 <body>
-    <div class="language-container">
-        <h1>Select Language</h1>
-        <button class="language-button" onclick="redirectTo('en')">English</button>
-        <button class="language-button" onclick="redirectTo('ko')">한국어</button>
-    </div>
-    <script>
-        function redirectTo(lang) {
-            if (lang === 'en') {
-                window.location.href = 'us.html';
-            } else if (lang === 'ko') {
-                window.location.href = 'kr.html';
-            }
-        }
-    </script>
+  <a class="skip" href="#project-detail">Skip to project details</a>
+  <header class="site-header">
+    <a class="identity" href="#top"><img src="portrait.jpeg" alt="" width="38" height="48"><span>Peter Yuk<span class="identity-sub">Software Engineer</span></span></a>
+    <nav aria-label="Main navigation">
+      <a href="#work">Work</a><a href="#leadership">Leadership</a><a class="resume-link" href="Peter_Yuk_Resume.pdf" target="_blank" rel="noopener">Résumé <span aria-hidden="true">↗</span></a><a class="contact-link" href="mailto:peteryuk91@gmail.com">Say hello <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="intro" aria-labelledby="intro-title">
+      <div><div class="location"><span class="location-dot" aria-hidden="true"></span>Austin, Texas</div><h1 id="intro-title">Hi, I’m Peter.</h1><p>I’m a software engineer in Austin. I build tools for property analysis, county workflows, and the job search.<br class="desktop-break"> I lead CityLink development at <a href="#experience">SingularX</a>.</p></div>
+      <div class="intro-aside"><span>Explore the objects.</span><span>Then look inside the work.</span><a href="Peter_Yuk_Resume.pdf" target="_blank" rel="noopener">View my résumé ↗</a></div>
+    </section>
+
+    <section id="work" class="work" aria-label="Selected projects">
+      <div class="work-toolbar"><div><h2>A few things I’ve built</h2><span class="work-count">3 selected projects</span></div><button id="motion-toggle" type="button" aria-pressed="false"><span aria-hidden="true">Ⅱ</span> Pause motion</button></div>
+      <div class="work-grid">
+        <div class="gallery">
+          <div id="scene" class="scene" role="group" aria-label="Interactive 3D project display">
+            <div class="scene-corner"><span class="tiny-square" aria-hidden="true"></span> Peter’s workbench</div>
+            <p id="scene-status" class="scene-status" role="status">Setting up the workbench…</p>
+            <div id="hotspots" class="hotspots" hidden>
+              <button type="button" class="hotspot" data-project="value" aria-label="Explore Value Indiana"><span class="hotspot-dot"></span><span>Value Indiana</span><span aria-hidden="true">↗</span></button>
+              <button type="button" class="hotspot" data-project="jobhawk" aria-label="Explore JobHawk"><span class="hotspot-dot"></span><span>JobHawk</span><span aria-hidden="true">↗</span></button>
+              <button type="button" class="hotspot" data-project="citylink" aria-label="Explore CityLink"><span class="hotspot-dot"></span><span>CityLink</span><span aria-hidden="true">↗</span></button>
+            </div>
+            <div class="scene-controls"><span id="scene-hint">Choose a project below</span><button type="button" id="reset-view" aria-label="Reset 3D view" hidden>Reset view <span aria-hidden="true">↺</span></button></div>
+          </div>
+          <div class="project-picker" aria-label="Choose project">
+            <button type="button" class="project-choice" data-project="value" aria-pressed="true"><span class="project-number">01</span><span>Value Indiana<small>Property data</small></span><span class="picker-arrow" aria-hidden="true">↗</span></button>
+            <button type="button" class="project-choice" data-project="citylink" aria-pressed="false"><span class="project-number">02</span><span>CityLink<small>SingularX · GovTech</small></span><span class="picker-arrow" aria-hidden="true">↗</span></button>
+            <button type="button" class="project-choice" data-project="jobhawk" aria-pressed="false"><span class="project-number">03</span><span>JobHawk<small>Workflow automation</small></span><span class="picker-arrow" aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+
+        <article id="project-detail" class="project-detail" tabindex="-1" aria-labelledby="project-title">
+          <div class="detail-label"><span id="project-category">PROPERTY DATA</span><span id="project-index">01 / 03</span></div>
+          <h2 id="project-title">Value Indiana</h2>
+          <p id="project-summary" class="project-summary">Live in five Indiana counties. Find a property, explore comparables, and build a valuation report.</p>
+          <div class="story-question"><span>A CLOSER LOOK</span><h3 id="project-question">How do you get from a parcel number to a property valuation?</h3></div>
+          <p id="project-story" class="story-copy">The useful part is the path between finding a property and explaining its value. Value Indiana brings parcel search, comparable properties, regression analysis, and a PDF report into one workflow.</p>
+          <div class="ownership"><span id="project-role">My part · Full-stack development</span><p id="project-contribution">I built the data imports, search, valuation workflow, and reporting. Value Indiana is live in five Indiana counties.</p></div>
+          <a class="walkthrough-link" href="stories/value.html">Read the full story <span aria-hidden="true">↗</span></a>
+          <div id="project-links" class="project-links"><a href="https://valueindiana.com" target="_blank" rel="noopener">Visit Value Indiana ↗</a></div>
+        </article>
+      </div>
+      <details class="walkthrough-disclosure"><summary>Try a quick walkthrough of the selected project <span aria-hidden="true">＋</span></summary>
+      <section id="walkthrough" class="walkthrough" aria-labelledby="walkthrough-title">
+        <div class="walkthrough-intro"><span class="section-kicker" id="walkthrough-kicker">INSIDE VALUE INDIANA</span><h2 id="walkthrough-title">From a property to a report.</h2><p id="walkthrough-context">Follow the workflow, one step at a time.</p></div>
+        <div class="walkthrough-layout">
+          <div class="walkthrough-copy"><div id="workflow-steps" class="workflow-steps" aria-label="Project walkthrough"></div><h3 id="step-title"></h3><p id="workflow-description" class="workflow-description" aria-live="polite"></p><div class="detail-observation"><span>THE DETAIL TO NOTICE</span><p id="step-detail"></p></div><p id="team-credit" class="team-credit"></p><details class="technical-details"><summary>Technical details</summary><p id="project-stack"></p><p id="project-date"></p></details></div>
+          <div class="product-evidence">
+            <figure id="product-figure"><a id="product-image-link" href="media/valueindiana-lookup.webp" target="_blank" rel="noopener" aria-label="Open full product screenshot"><img id="product-image" src="media/valueindiana-lookup.webp" alt="Value Indiana property lookup screen" width="1200" height="750"></a><figcaption id="product-caption"></figcaption></figure>
+            <div id="jobhawk-demo" class="jobhawk-demo" hidden><div class="demo-top"><span class="terminal-dots" aria-hidden="true">● ● ●</span><span>JobHawk / workflow example</span></div><div class="demo-content"><span class="demo-label">ILLUSTRATIVE WALKTHROUGH · FICTIONAL JOB</span><h3>Software Engineer</h3><p class="demo-company">Example Company · Austin, TX</p><div id="demo-output" class="demo-output" aria-live="polite"></div><label id="demo-control"><input type="checkbox" id="unknown-field"> Add an unfamiliar required field</label><p class="demo-footnote">This example explains the local workflow. It does not access a job board or submit an application.</p></div></div>
+          </div>
+        </div>
+      </section>
+      </details>
+      <p id="selection-announcement" class="sr-only" aria-live="polite"></p>
+      <noscript><div class="fallback-projects"><h3>Read the work</h3><p>All case studies are available without JavaScript.</p><a href="stories/value.html">Value Indiana →</a> · <a href="stories/citylink.html">CityLink at SingularX →</a> · <a href="stories/jobhawk.html">JobHawk →</a></div></noscript>
+    </section>
+
+
+    <section class="portfolio-section" id="leadership" aria-labelledby="leadership-title">
+      <div class="section-heading"><div><span class="section-kicker">LEADERSHIP & COLLABORATION</span><h2 id="leadership-title">Building with other people.</h2></div></div>
+      <div class="editorial-rows">
+        <article class="editorial-row"><p class="row-context">SingularX AI Lab<br><span>Technical guidance · Product direction</span></p><div><h3>From a technical question to the bigger picture.</h3><p>I help members work through implementation questions, shape the overall architecture, and think through product logic and the business approach. The work ranges from hands-on technical guidance to setting direction across a project.</p></div></article>
+        <article class="editorial-row"><p class="row-context">SingularX<br><span>Technical Lead · since February 2026</span></p><div><h3>Leading CityLink development.</h3><p>My role grew from Software Engineer to Technical Lead. I lead development of the county workflow platform, including permit and code-enforcement features and searchable legacy records.</p><a href="stories/citylink.html">Read the SingularX story ↗</a></div></article>
+        <article class="editorial-row"><p class="row-context">HackHarvard 2025<br><span>Votify · Backend developer</span></p><div><h3>A backend within a four-person team.</h3><p>I worked on the model-verification backend. Blessing Amoah handled prompt engineering; Araf Latif and Dylan D’rozario built the frontend. The case study credits the shared product and separates my contribution.</p><a href="stories/votify.html">See the collaboration ↗</a></div></article>
+      </div>
+    </section>
+    <section class="portfolio-section" id="communication" aria-labelledby="communication-title">
+      <div class="section-heading"><div><span class="section-kicker">SELECTED PITCHES & PRESENTATIONS</span><h2 id="communication-title">Taking the work into the room.</h2></div></div>
+      <div class="presentation-list">
+        <article class="presentation-entry"><span class="section-kicker">PRODUCT PITCH · ICAA</span><h3>Presenting Value Indiana.</h3><p>I brought Value Indiana to ICAA to present the product.</p>
+          <figure class="event-photo"><a href="media/icaa-valueindiana.jpeg" target="_blank" rel="noopener" aria-label="Open full ICAA photo"><img src="media/icaa-valueindiana.jpeg" width="1050" height="1400" alt="Peter beside the Value Indiana display at ICAA" loading="lazy" decoding="async"></a><figcaption>At the Value Indiana display at ICAA.</figcaption></figure>
+          <a class="event-story-link" href="stories/value.html">Explore the product behind the pitch ↗</a>
+        </article>
+        <article class="presentation-entry"><span class="section-kicker">PITCH COMPETITION · INDIANA</span><h3>AWS pitch competition</h3><p>I presented at an AWS pitch competition in Indiana.</p>
+          <figure class="event-photo"><a href="media/aws-pitch.jpeg" target="_blank" rel="noopener" aria-label="Open full AWS presentation photo"><img src="media/aws-pitch.jpeg" width="1600" height="901" alt="Peter presenting a product slide to an audience at the AWS pitch competition" loading="lazy" decoding="async"></a><figcaption>Presenting at the AWS pitch competition. Slide figures reflect the time of the event.</figcaption></figure>
+          <figure class="event-photo"><a href="media/aws-event-group.jpeg" target="_blank" rel="noopener" aria-label="Open full AWS event group photo"><img src="media/aws-event-group.jpeg" width="1400" height="1050" alt="Event group photo at the AWS pitch competition following the awards announcement" loading="lazy" decoding="async"></a><figcaption>Event group photo after the awards announcement. I participated but did not win an award.</figcaption></figure>
+        </article>
+      </div>
+    </section>
+    <section class="portfolio-section" id="more-work" aria-labelledby="more-title">
+      <div class="section-heading"><div><span class="section-kicker">MORE WORK</span><h2 id="more-title">A few other things I’ve built.</h2></div></div>
+      <div class="more-work-grid">
+        <a class="work-note" href="stories/singularx-website.html"><span>SingularX · Website development</span><h3>The company’s public front door. ↗</h3><p>A company website alongside product development at SingularX.</p></a>
+        <a class="work-note" href="stories/votify.html"><span>HackHarvard · Backend development</span><h3>Follow a claim to its sources. ↗</h3><p>Votify’s verification workflow and the team behind the product.</p></a>
+      </div>
+    </section>
+
+    <section id="experience" class="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><div><span class="section-kicker">ALONG THE WAY</span><h2 id="experience-title">A little background</h2></div><a href="Peter_Yuk_Resume.pdf" download>Download résumé <span aria-hidden="true">↓</span></a></div>
+      <article class="experience-row"><div class="employer-mark singularx" aria-hidden="true">Sx</div><div class="employer"><h3>SingularX</h3><p>Software Engineer → Technical Lead</p><span>Promoted February 2026 · Remote</span></div><div class="experience-body"><p>CityLink: a launch-ready permit and code-enforcement platform. I also guide technical architecture and product direction in the SingularX AI Lab.</p></div><time>November 2025<br>— Present</time></article>
+      <article class="experience-row"><div class="employer-mark csi" aria-hidden="true">CV</div><div class="employer"><h3>CSI Vision</h3><p>Forward Deployed Software Engineer</p><span>Gwanggyo, South Korea</span></div><div class="experience-body"><p>Computer vision systems connected to Unity for on-site client demos.</p></div><time>May 2025<br>— July 2025</time></article>
+      <article class="experience-row"><div class="employer-mark naver" aria-hidden="true">N</div><div class="employer"><h3>Naver Cloud</h3><p>Software Engineer Intern</p><span>Pangyo, South Korea</span></div><div class="experience-body"><p>Language support and encoding work for an international product.</p></div><time>June 2023<br>— August 2023</time></article>
+    </section>
+
+    <section class="about" aria-labelledby="about-title"><div class="about-photo"><img src="portrait.jpeg" width="110" height="141" alt="Peter Dokyung Yuk"></div><div><span class="section-kicker">A LITTLE ABOUT ME</span><h2 id="about-title">Peter Dokyung Yuk</h2><p>I’m based in Austin, Texas, and graduated from Purdue University with a B.S. in Computer Science in May 2026. Alongside my work at SingularX, I build independent projects and collaborate at hackathons.</p><div class="about-links"><a href="https://github.com/dyuk01" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/dyuk" target="_blank" rel="noopener">LinkedIn ↗</a><a href="mailto:peteryuk91@gmail.com">Email ↗</a></div></div><a class="email-block" href="mailto:peteryuk91@gmail.com"><span>Have a role in mind?</span><strong>Let’s talk. ↗</strong><span>peteryuk91@gmail.com</span></a></section>
+  </main>
+  <footer><span>Peter Yuk · 2026</span><span><button type="button" id="credits-open">Design notes</button></span><a href="#top">Back to top ↑</a></footer>
+  <dialog id="credits"><button type="button" id="credits-close" aria-label="Close design notes">×</button><h2>About this site</h2><p>Original 3D objects and interface built for Peter’s portfolio. The objects are conceptual illustrations; project facts come from Peter’s master profile and project documentation. The walkthrough uses Value Indiana product screenshots and report pages shared publicly by SingularX, plus a CityLink public-page image and a labeled illustrative JobHawk example. The Votify case study uses team repository screenshots. Votify screens are the team’s work; Peter worked on the backend.</p><p>References: <a href="https://room.bokoko33.me/" target="_blank" rel="noopener">Bokoko’s miniature room</a> for the diorama treatment, and <a href="https://bruno-simon.com/" target="_blank" rel="noopener">Bruno Simon’s portfolio</a> for exploring work through objects. No source code or models were copied from either site.</p><p>Built with <a href="vendor/THREE-LICENSE.txt">Three.js (MIT)</a>. The résumé is available as a downloadable PDF.</p></dialog>
+  <script src="app.js" defer></script>
 </body>
 </html>
