@@ -1,18 +1,18 @@
 const projects = {
   "value": {
     "name": "Value Indiana",
-    "category": "PROPERTY DATA",
+    "category": "SINGULARX · PROPERTY DATA",
     "index": "01 / 03",
     "summary": "Live in five Indiana counties. Find a property, compare, and report.",
     "question": "How do you get from a parcel number to a property valuation?",
     "story": "The useful part is the path between finding a property and explaining its value. Value Indiana brings parcel search, comparable properties, regression analysis, and a PDF report into one workflow.",
-    "role": "My part · Full-stack development",
+    "role": "My part · Full-stack development at SingularX",
     "contribution": "I built the data imports, search, valuation workflow, and reporting. Value Indiana is live in five Indiana counties.",
     "title": "From a property to a report.",
     "context": "A closer look at the workflow behind Value Indiana.",
     "stack": "Python · Flask · MySQL · scikit-learn · JavaScript",
-    "date": "November 2025 – Present",
-    "credit": "",
+    "date": "SingularX: November 2025 – Present",
+    "credit": "Value Indiana is a SingularX product. My contribution is full-stack engineering.",
     "steps": [
       {
         "label": "Find",
@@ -224,5 +224,5 @@ import('./scene.js').then(async ({ createScene }) => {
   document.querySelector('#scene-status').hidden = true;
   document.querySelector('#hotspots').hidden = false;
   document.querySelector('#reset-view').hidden = false;
-  document.querySelector('#scene-hint').textContent = 'Select an object · Drag to look around';
+  document.querySelector('#scene-hint').textContent = '';
 }).catch(sceneUnavailable);

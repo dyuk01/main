@@ -218,7 +218,7 @@ export async function createScene(container, { onSelect, paused = false, onFailu
       if (Math.abs(dx) > 7 || (pointerDown.type !== 'touch' && Math.abs(dy) > 7)) dragged = true;
       if (dragged) {
         if (!renderer.domElement.hasPointerCapture(event.pointerId)) renderer.domElement.setPointerCapture(event.pointerId);
-        targetYaw = THREE.MathUtils.clamp(pointerDown.yaw + dx * .004, -.6, .7);
+        targetYaw = THREE.MathUtils.clamp(pointerDown.yaw - dx * .004, -.6, .7);
         if (pointerDown.type !== 'touch') targetPitch = THREE.MathUtils.clamp(pointerDown.pitch + dy * .002, .58, .98);
       }
     } else {
